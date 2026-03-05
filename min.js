@@ -2,7 +2,7 @@
 let phone="2001221183490"
 
 let products=[
-{name:"كيك شوكولاتة",price:50,cat:"cake",img:"img/pexels-ali-dashti-506667798-29177177.jpg"},
+{name:"كيك شوكولاتة",price:50,cat:"cake",img:"img/pexels-christina-polupanova-138429930-10281287.jpg"},
 {name:"تشيز كيك",price:60,cat:"cake",img:"img/pexels-biannkbya-19897304.jpg"},
 {name:"براونيز",price:40,cat:"cake",img:"img/pexels-christina-polupanova-138429930-10281287.jpg"},
 {name:"دونات",price:25,cat:"donut",img:"img/pexels-diva-plavalaguna-5711231.jpg"},
@@ -272,3 +272,4 @@ window.open(`https://wa.me/${phone}?text=${text}`,"_blank")
 
 }
 renderProducts()
+
