@@ -9,7 +9,7 @@ let products=[
 {name:"ك بسكوت باميو",price:300,cat:"salbleh",img:"img/photo_5859211956374408385_y.jpg"},
 {name:"ك بسكوت قهوة",price:300,cat:"salbleh",img:"img/photo_5859211956374408380_y (1).jpg"},
 {name:"ك بسكوت ميلكا",price:350,cat:"salbleh",img:"img/photo_5859211956374408377_y.jpg"},
-{name:"ك سكوت شزكلاتة",price:325,cat:"salbleh",img:"img/hq720.jpg"},
+{name:"ك سكوت شوكلاتة",price:325,cat:"salbleh",img:"img/hq720.jpg"},
 
 // بيتيفورد
 {name:"ك بتيفور سادة بدون مكسرات",price:300,cat:"betefor",img:"img/photo_5859211956374408375_y.jpg"},
@@ -243,4 +243,5 @@ window.open(`https://wa.me/${phone}?text=${text}`,"_blank")
 
 }
 renderProducts()
+
 
