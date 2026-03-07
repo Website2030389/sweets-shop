@@ -5,11 +5,11 @@ let products=[
     // سابية و بسكوت
 {name:"ك سابلية ",price:350,cat:"salbleh",img:"img/photo_5859211956374408381_y.jpg"},
 {name:"ك بسكوت سادة",price:285,cat:"salbleh",img:"img/photo_5859211956374408379_y.jpg"},
-{name:"ك يسكوت نص و نص",price:330,cat:"salbleh",img:"img/photo_5859211956374408384_y.jpg"},
+{name:"ك بسكوت نص و نص",price:330,cat:"salbleh",img:"img/photo_5859211956374408384_y.jpg"},
 {name:"ك بسكوت باميو",price:300,cat:"salbleh",img:"img/photo_5859211956374408385_y.jpg"},
 {name:"ك بسكوت قهوة",price:300,cat:"salbleh",img:"img/photo_5859211956374408380_y (1).jpg"},
 {name:"ك بسكوت ميلكا",price:350,cat:"salbleh",img:"img/photo_5859211956374408377_y.jpg"},
-{name:"ك سكوت شوكلاتة",price:325,cat:"salbleh",img:"img/hq720.jpg"},
+{name:"ك بسكوت شوكلاتة",price:325,cat:"salbleh",img:"img/hq720.jpg"},
 
 // بيتيفورد
 {name:"ك بتيفور سادة بدون مكسرات",price:300,cat:"betefor",img:"img/photo_5859211956374408375_y.jpg"},
@@ -24,7 +24,7 @@ let products=[
 // غريبة
 {name:"ك غريبة لولى",price:290,cat:"gryba",img:"img/MG_0122-1.jpg"},
 {name:"ك غريبة بندق",price:330,cat:"gryba",img:"img/maxresdefault.jpg"},
-{name:"ك غريبة فسندق",price:370,cat:"gryba",img:"img/176-100503-modus-operandi-petit-four-eid-fitr-2021_700x400.jpg"},
+{name:"ك غريبة فسدق",price:370,cat:"gryba",img:"img/176-100503-modus-operandi-petit-four-eid-fitr-2021_700x400.jpg"},
 {name:"ك غريبة لوز",price:350,cat:"gryba",img:"img/16941144789437202403291256175617.jpg"},
 // مشكل
 {name:"ك مشكل ",price:330,cat:"mshkel",img:"img/مخبوزات-العيد-1.jpg"},
@@ -243,5 +243,6 @@ window.open(`https://wa.me/${phone}?text=${text}`,"_blank")
 
 }
 renderProducts()
+
 
 
