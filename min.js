@@ -114,17 +114,7 @@ toast.classList.remove("show")
 },2500)
 
 }
-// function addToCart(i){
 
-// let q=parseInt(document.getElementById("qty"+i).innerText)
-
-// if(q==0)return
-
-// cart[i]=(cart[i]||0)+q
-
-// updateCart()
-
-// }
 function addToCart(i){
 
 let q=parseInt(document.getElementById("qty"+i).innerText)
@@ -253,3 +243,4 @@ window.open(`https://wa.me/${phone}?text=${text}`,"_blank")
 
 }
 renderProducts()
+
