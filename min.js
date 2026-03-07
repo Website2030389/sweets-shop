@@ -2,29 +2,33 @@
 let phone="2001221183490"
 
 let products=[
-{name:"كيك شوكولاتة",price:50,cat:"cake",img:"img/pexels-christina-polupanova-138429930-10281287.jpg"},
-{name:"تشيز كيك",price:60,cat:"cake",img:"img/pexels-biannkbya-19897304.jpg"},
-{name:"براونيز",price:40,cat:"cake",img:"img/pexels-christina-polupanova-138429930-10281287.jpg"},
-{name:"دونات",price:25,cat:"donut",img:"img/pexels-diva-plavalaguna-5711231.jpg"},
-{name:"دونات شوكولاتة",price:30,cat:"donut",img:"img/pexels-nestor-cortez-341956-1131810.jpg"},
-{name:"آيس كريم",price:30,cat:"ice",img:"img/pexels-gustavoraton-6441136.jpg"},
-{name:"آيس كريم شوكولاتة",price:35,cat:"ice",img:"img/pexels-mccutcheon-1191639.jpg"},
-{name:"كيك شوكولاتة",price:50,cat:"cake",img:"img/pexels-ali-dashti-506667798-29177177.jpg"},
+    // سابية و بسكوت
+{name:"ك سابلية ",price:350,cat:"salbleh",img:"img/photo_5859211956374408381_y.jpg"},
+{name:"ك بسكوت سادة",price:285,cat:"salbleh",img:"img/photo_5859211956374408379_y.jpg"},
+{name:"ك يسكوت نص و نص",price:330,cat:"salbleh",img:"img/photo_5859211956374408384_y.jpg"},
+{name:"ك بسكوت باميو",price:300,cat:"salbleh",img:"img/photo_5859211956374408385_y.jpg"},
+{name:"ك بسكوت قهوة",price:300,cat:"salbleh",img:"img/photo_5859211956374408380_y (1).jpg"},
+{name:"ك بسكوت ميلكا",price:350,cat:"salbleh",img:"img/photo_5859211956374408377_y.jpg"},
+{name:"ك سكوت شزكلاتة",price:325,cat:"salbleh",img:"img/hq720.jpg"},
 
-{name:"تشيز كيك",price:60,cat:"cake",img:"img/pexels-biannkbya-19897304.jpg"},
-{name:"براونيز",price:40,cat:"cake",img:"img/pexels-christina-polupanova-138429930-10281287.jpg"},
-{name:"دونات",price:25,cat:"donut",img:"img/pexels-diva-plavalaguna-5711231.jpg"},
-{name:"دونات شوكولاتة",price:30,cat:"donut",img:"img/pexels-nestor-cortez-341956-1131810.jpg"},
-{name:"آيس كريم",price:30,cat:"ice",img:"img/pexels-gustavoraton-6441136.jpg"},
-{name:"آيس كريم شوكولاتة",price:35,cat:"ice",img:"img/pexels-mccutcheon-1191639.jpg"},
-{name:"كيك شوكولاتة",price:50,cat:"cake",img:"img/pexels-ali-dashti-506667798-29177177.jpg"},
-{name:"تشيز كيك",price:60,cat:"cake",img:"img/pexels-biannkbya-19897304.jpg"},
-{name:"براونيز",price:40,cat:"cake",img:"img/pexels-christina-polupanova-138429930-10281287.jpg"},
-{name:"دونات",price:25,cat:"donut",img:"img/pexels-diva-plavalaguna-5711231.jpg"},
-{name:"دونات شوكولاتة",price:30,cat:"donut",img:"img/pexels-nestor-cortez-341956-1131810.jpg"},
-{name:"آيس كريم",price:30,cat:"ice",img:"img/pexels-gustavoraton-6441136.jpg"},
-{name:"آيس كريم شوكولاتة",price:35,cat:"ice",img:"img/pexels-mccutcheon-1191639.jpg"},
-]
+// بيتيفورد
+{name:"ك بتيفور سادة بدون مكسرات",price:300,cat:"betefor",img:"img/photo_5859211956374408375_y.jpg"},
+{name:"ك بتيفور مشكل مكسرات",price:350,cat:"betefor",img:"img/photo_5859211956374408378_y.jpg"},
+// كعك
+{name:"ك كعك سادة",price:300,cat:"ka3k",img:"img/6402101893998202503140922152215.jpg"},
+{name:"ك كعك ملبن ",price:300,cat:"ka3k",img:"img/image.jpg"},
+{name:"ك كعك بندق",price:350,cat:"ka3k",img:"img/4133317511711717296.jpg"},
+{name:"ك كعك عين جمل",price:350,cat:"ka3k",img:"img/Cooki-man8974_Copy_e14b7884-b0a0-44e6-b5f0-79c4d7421e64.jpg"},
+{name:"ك كعك عين جمل ملبن ",price:350,cat:"ka3k",img:"img/image.jpg"},
+{name:"ك كعك بندق مع ملبن ",price:350,cat:"ka3k",img:"img/93.jpg"},
+// غريبة
+{name:"ك غريبة لولى",price:290,cat:"gryba",img:"img/MG_0122-1.jpg"},
+{name:"ك غريبة بندق",price:330,cat:"gryba",img:"img/maxresdefault.jpg"},
+{name:"ك غريبة فسندق",price:370,cat:"gryba",img:"img/176-100503-modus-operandi-petit-four-eid-fitr-2021_700x400.jpg"},
+{name:"ك غريبة لوز",price:350,cat:"gryba",img:"img/16941144789437202403291256175617.jpg"},
+// مشكل
+{name:"ك مشكل ",price:330,cat:"mshkel",img:"img/مخبوزات-العيد-1.jpg"},
+    ]
 
 let cart={}
 let currentCat="all"
@@ -73,7 +77,7 @@ html+=`
 </div>
 
 <button class="order" onclick="addToCart(${i})">
-إضافة للسلة
+add to cart
 </button>
 
 </div>
@@ -153,12 +157,7 @@ count+=cart[i]
 
 total+=p.price*cart[i]
 
-// html+=`
-// <div class="cart-item">
-// ${p.name} × ${cart[i]}
-// <button class="remove" onclick="removeItem(${i})">X</button>
-// </div>
-// `
+
 html+=`
 <div class="cart-item">
 
@@ -166,7 +165,7 @@ html+=`
 
 <div class="cart-info">
 <div class="cart-name">${p.name}</div>
-<div class="cart-qty">الكمية: ${cart[i]}</div>
+<div class="cart-qty">  الكمية ب الكيلو: ${cart[i]}</div>
 </div>
 
 <button class="remove" onclick="removeItem(${i})">✖</button>
@@ -218,25 +217,7 @@ renderProducts()
 
 document.getElementById("search").addEventListener("keyup",renderProducts)
 
-// function sendWhats(){
 
-// let text="طلب جديد:%0A"
-
-// for(let i in cart){
-
-// let p=products[i]
-
-// text+=p.name+" × "+cart[i]+"%0A"
-
-// }
-
-// text+="%0Aالإجمالي: "+document.getElementById("totalPrice").innerText+" جنيه"
-
-// window.open(`https://wa.me/${phone}?text=${text}`)
-
-// }
-
-// renderProducts()
 function sendWhats(){
 
 let name=document.getElementById("custName").value
@@ -272,4 +253,3 @@ window.open(`https://wa.me/${phone}?text=${text}`,"_blank")
 
 }
 renderProducts()
-
